@@ -63,9 +63,10 @@ class Formulario extends Component {
                             className="form-control"
                             onChange={this.handleInput}
                         >
-                        <option>baja</option>
-                        <option>media</option>
-                        <option>alta</option>
+                        <option>Ninguna</option>
+                        <option>Baja</option>
+                        <option>Media</option>
+                        <option>Alta</option>
                         </select>
                     </div>
                     <button type="submit" className="btn btn-primary">

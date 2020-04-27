@@ -4,12 +4,13 @@ import ReactDOM from "react-dom";
 import "./assets/css/index.css";
 import App from "./App";
 import PrimerComponente from "./components/PrimerComponente";
+import Navbar from "./components/Navbar";
 
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <PrimerComponente />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
