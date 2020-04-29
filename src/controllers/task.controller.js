@@ -32,9 +32,7 @@ export async function createTask(req, res) {
 
 export async function getTasks(req, res) {
   const tasks = await Task.findAll();
-  res.json({
-    data: tasks,
-  });
+  res.json(tasks);
 }
 
 export async function getOneTask(req, res) {
