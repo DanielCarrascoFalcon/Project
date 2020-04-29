@@ -1,23 +1,14 @@
 import React from "react";
-import Tasks from "../components/Tasks";
+import { Link } from "react-router-dom";
 
 class Home extends React.Component {
-  state = {
-    tasks: [],
-  };
-
-  async componentDidMount() {
-    const response = await fetch(`/tasks`);
-    console.log("acaaaaaaaaaa1111", response);
-    const json = await response.json();
-    console.log("acaaaaaaaaaa", json);
-    this.setState({ tasks: json });
-  }
-
   render() {
     return (
       <div>
-        <Tasks tasks={this.state.tasks} />
+        <h1>Esta es la vista home</h1>
+        <Link to="/tasks">
+          <h1>clickeame para ir a tareas</h1>
+        </Link>
       </div>
     );
   }
