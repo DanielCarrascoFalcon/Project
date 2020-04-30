@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "sequelize: db:migrate",
     "dev": "nodemon src/index.js --exec babel-node",
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build ./src -s",
