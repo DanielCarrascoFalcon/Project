@@ -19,7 +19,7 @@ var app = (0, _express["default"])(); // Middlewares
 
 app.use((0, _express.json)()); // Routes
 
-app.use("/tasks", _tasks["default"]);
+app.use("/api/tasks", _tasks["default"]);
 var _default = app;
 exports["default"] = _default;
 //# sourceMappingURL=app.js.map

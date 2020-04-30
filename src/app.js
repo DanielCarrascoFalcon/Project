@@ -10,6 +10,6 @@ const app = express();
 app.use(json());
 
 // Routes
-app.use("api/tasks", taskRoutes);
+app.use("/api/tasks", taskRoutes);
 
 export default app;

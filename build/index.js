@@ -19,10 +19,10 @@ function _main() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return _app["default"].listen(500);
+            return _app["default"].listen(process.env.PORT || 7000);
 
           case 2:
-            console.log("Server on port 500");
+            console.log("Server on port 7000");
 
           case 3:
           case "end":
